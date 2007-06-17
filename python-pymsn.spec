@@ -1,4 +1,5 @@
 Summary:	Python module for the MSN protocol
+Summary(pl.UTF-8):	Moduł Pythona do protokołu MSN
 Name:		python-pymsn
 Version:	0.2.2
 Release:	1
@@ -16,6 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Python module for the MSN protocol.
+
+%description -l pl.UTF-8
+Moduł Pythona do protokołu MSN.
 
 %prep
 %setup -q -n pymsn-%{version}
