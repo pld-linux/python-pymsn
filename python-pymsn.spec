@@ -1,8 +1,10 @@
+# TODO
+# - fork of this exists as python-papyon.spec
 Summary:	Python module for the MSN protocol
 Summary(pl.UTF-8):	Moduł Pythona do protokołu MSN
 Name:		python-pymsn
 Version:	0.3.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://telepathy.freedesktop.org/releases/pymsn/pymsn-%{version}.tar.gz
@@ -12,6 +14,8 @@ BuildRequires:	python >= 1:2.5
 BuildRequires:	python-pyOpenSSL
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
+Requires:	python-Crypto
+Requires:	python-pyOpenSSL
 Requires:	python-pygobject
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,12 +30,11 @@ Moduł Pythona do protokołu MSN.
 %setup -q -n pymsn-%{version}
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-python setup.py install \
+%{__python} setup.py install \
         --root=$RPM_BUILD_ROOT \
         --optimize=2
 
