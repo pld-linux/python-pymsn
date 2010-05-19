@@ -12,7 +12,9 @@ Source0:	http://telepathy.freedesktop.org/releases/pymsn/pymsn-%{version}.tar.gz
 URL:		http://telepathy.freedesktop.org/wiki/Pymsn
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-Crypto
+BuildRequires:	python-devel
 BuildRequires:	python-pyOpenSSL
+BuildRequires:	python-pygobject
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-Crypto
