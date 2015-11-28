@@ -33,13 +33,11 @@ Moduł Pythona do protokołu MSN.
 %setup -q -n pymsn-%{version}
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-        --root=$RPM_BUILD_ROOT \
-        --optimize=2
+%py_install
 
 %py_postclean
 
