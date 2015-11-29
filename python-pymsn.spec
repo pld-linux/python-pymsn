@@ -16,7 +16,7 @@ BuildRequires:	python-devel
 BuildRequires:	python-pyOpenSSL
 BuildRequires:	python-pygobject
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-Crypto
 Requires:	python-pyOpenSSL
 Requires:	python-pygobject
