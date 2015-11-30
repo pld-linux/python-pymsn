@@ -4,7 +4,7 @@ Summary:	Python module for the MSN protocol
 Summary(pl.UTF-8):	Moduł Pythona do protokołu MSN
 Name:		python-pymsn
 Version:	0.3.3
-Release:	7
+Release:	8
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://telepathy.freedesktop.org/releases/pymsn/pymsn-%{version}.tar.gz
