@@ -7,16 +7,16 @@ Version:	0.3.3
 Release:	8
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://telepathy.freedesktop.org/releases/pymsn/pymsn-%{version}.tar.gz
+Source0:	https://telepathy.freedesktop.org/releases/pymsn/pymsn-%{version}.tar.gz
 # Source0-md5:	dbdb6f92569bae784084f0c3a146eb5b
-URL:		http://telepathy.freedesktop.org/wiki/Pymsn
+URL:		https://telepathy.freedesktop.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-Crypto
 BuildRequires:	python-devel
 BuildRequires:	python-pyOpenSSL
 BuildRequires:	python-pygobject
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.710
+BuildRequires:	rpmbuild(macros) >= 1.714
 Requires:	python-Crypto
 Requires:	python-pyOpenSSL
 Requires:	python-pygobject
